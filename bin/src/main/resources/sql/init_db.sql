@@ -1,0 +1,1 @@
+insert into users values('admin_med', 'admin.mediation@atos.net', 'Admin', 'Mediation', '770000000', 'ACTIVATED');
