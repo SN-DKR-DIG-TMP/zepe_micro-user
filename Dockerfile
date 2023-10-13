@@ -11,8 +11,8 @@ FROM base as development
 CMD ["./mvnw", "spring-boot:run", "-Dspring-boot.run.profiles=postgresql"]
 
 
-FROM base as test
-RUN ["./mvnw", "test"]
+# FROM base as test
+# RUN ["./mvnw", "test"]
 
 FROM base as build
 RUN ./mvnw package
