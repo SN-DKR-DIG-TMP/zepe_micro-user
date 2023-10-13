@@ -8,7 +8,7 @@ RUN chmod +x ./mvnw
 COPY src ./src
 
 FROM base as development
-CMD ["./mvnw", "spring-boot:run", "-Dspring-boot.run.profiles=postgresql"]
+CMD ["./mvnw", "spring-boot:run", "-Dspring-boot.run.profiles=postgresql", "-DskipTests"]
 
 
 # FROM base as test
