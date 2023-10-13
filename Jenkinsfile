@@ -2,7 +2,7 @@ pipeline{
     agent any
     environment {
         USER_NAME = 'ibrahima.diop'
-         imageName = "adepme-eureka"
+         imageName = "zepe-micro-user"
          dockerImageVersion = 'SNAPSHOT-1.0.0'
          repo = "${JOB_NAME}"
          DOCKER_REGISTRY_USER= 'karimux'
@@ -17,7 +17,7 @@ pipeline{
 
             stage('SCM Checkout') {
               steps {
-                 git(branch: 'develop', credentialsId: 'gitlab',  url:'${GITLAB_URL}/adepme/eureka')
+                 git(branch: 'develop', credentialsId: 'gitlab',  url:'${GITLAB_URL}/zepe/micro-user-standalone')
               }
          }
            stage('Check Packages'){
