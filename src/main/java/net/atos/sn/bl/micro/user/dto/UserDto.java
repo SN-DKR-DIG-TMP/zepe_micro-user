@@ -16,6 +16,7 @@ public class UserDto {
 	private String firstName;
 	private String lastName;
 	private String email;
+	//@Column(unique = false)
 	private String mobile;
 	private UserStatus status;
 	

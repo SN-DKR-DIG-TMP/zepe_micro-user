@@ -19,8 +19,7 @@ import net.atos.sn.bl.micro.user.utils.UserStatus;
 
 @Entity
 @Table(name = "users", uniqueConstraints = { @UniqueConstraint(columnNames = "userId"),
-		@UniqueConstraint(columnNames = "email"), @UniqueConstraint(columnNames = "mobile"), 
-		/*@UniqueConstraint(columnNames = "cniNumber")*/})
+		@UniqueConstraint(columnNames = "email")})
 
 public class User {
 	@Id
@@ -29,6 +28,7 @@ public class User {
 	private String lastName;
 	@Email
 	private String email;
+	//@Column(unique = false)
 	private String mobile;
 	@Enumerated(EnumType.STRING)
 	private UserStatus status = UserStatus.ACTIVATED;
