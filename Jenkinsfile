@@ -17,7 +17,7 @@ pipeline{
 
             stage('SCM Checkout') {
               steps {
-                 git(branch: 'develop', credentialsId: 'gitlab',  url:'${GITLAB_URL}/zepe/micro-user-standalone')
+                 git(branch: 'develop-v2', credentialsId: 'gitlab',  url:'${GITLAB_URL}/zepe/micro-user-standalone')
               }
          }
            stage('Check Packages'){
@@ -51,9 +51,9 @@ pipeline{
                 //protocol: 'http',
                 //repository: 'zepe-standaloneauth',
                 //version: '0.0.1-SNAPSHOT'
-                sh "echo 'Skip Nexus uploading beacause credentialsId not good.'"
-            }
-        }
+                //sh "echo 'Skip Nexus uploading beacause credentialsId not good.'"
+           // }
+       // }
            
                     stage('Build Image'){
                           steps{
