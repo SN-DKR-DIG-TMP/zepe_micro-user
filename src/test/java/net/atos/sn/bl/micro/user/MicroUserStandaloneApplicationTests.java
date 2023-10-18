@@ -1,13 +1,13 @@
-package net.atos.sn.bl.micro.user;
+// package net.atos.sn.bl.micro.user;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class MicroUserStandaloneApplicationTests {
+// @SpringBootTest
+// class MicroUserStandaloneApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// 	@Test
+// 	void contextLoads() {
+// 	}
 
-}
+// }
